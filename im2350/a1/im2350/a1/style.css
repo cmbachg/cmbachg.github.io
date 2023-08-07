@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Neue Kabel Black';
+    src: url(./NeueKabel-Black.otf);
+}
+
+*    {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    }
+
+
+
+body {
+    color: #000000;
+    background-color: #fff8e7;
+    font-family: 'Neue Kabel';
+    border-style: groove;
+    border-radius: 7.5rem;
+    border-color: color #000ff0;
+    border-width: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.15rem;
+    
+}
+
+/* .heading {
+    color: #FFA500;
+    background-color: plum;
+    font-family: 'Neue Kabel Black';
+    border-style: groove;
+    border-radius: 7.5rem;
+    border-color: color #273873;
+    border-width: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.15rem;
+} */
+
+.section-box{
+    max-width: 80%;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4dfff;
+    border-style: groove;
+    border-color: #f4dfff;
+    border-width: 5px;
+    padding: 25px;
+    padding-bottom: 50px;
+    margin: auto;
+    margin-bottom: 50px;
+    overflow: auto;
+    font-family: 'Neue Kabel Black'
+}
+
+
+h3 {
+    color: #cba2cb;
+    font-size: 1.3rem;
+}
+
+h2 {
+    color: #FFA500;
+    font-size: 1.8rem;
+}
+
+h1 {
+    color: #FFA500;
+    font-size: 2.2rem;
+}
+
+img {
+    height: auto;
+    width: 35rem;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+img:hover {
+    opacity: 0.9;
+    filter: blur(4px);
+}
+
+.mainheaders {            /* A border visual for the headers of both weeks */
+    border-style: groove;
+    border-radius: 3.5rem;
+    border-color: #add8e6;
+    border-width: 0.25rem;
+    box-shadow: 5px 5px 15px #f4dfff;
+}
+
+
+a, i {
+    padding-left:0rem !important;      
+    padding-right:0rem !important;
+}
+
+a:link {                                /* make the unvisited link a color*/
+    color: teal;
+    }
+a:visited {                             /* make the visited link a color */
+    color: plum;
+    }
+a:hover {                               /* make the  link a color when hovered on*/
+    color: darkorange;
+    }
+a:active {                              /* make the activitated (when loading) link a colored*/
+    color: grey;
+    }
