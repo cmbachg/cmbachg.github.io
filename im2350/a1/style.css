@@ -87,7 +87,7 @@ img:hover {
     filter: blur(4px);
 }
 
-.mainheaders {            /* A border visual for the headers of both weeks */
+.mainheaders {            
     border-style: groove;
     border-radius: 3.5rem;
     border-color: #add8e6;
