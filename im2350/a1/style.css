@@ -50,6 +50,7 @@ body {
     background-color: #f4dfff;
     border-style: groove;
     border-color: #f4dfff;
+    border-radius: 7.5rem;
     border-width: 5px;
     padding: 25px;
     padding-bottom: 50px;
