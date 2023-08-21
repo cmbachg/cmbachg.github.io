@@ -1,0 +1,190 @@
+/* z-index order */
+
+/* felx direction row
+flex nog watte 
+float right*/
+
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+:root{
+  --col-01:#f0f6f0;
+  --col-02:#e878e2;
+  --col-03:#4a67b6;
+  --col-04:#e878e2;
+  --border: 3px double var(--col-02);
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--col-01);
+  color: var(--col-02);
+  padding: 2vw;
+  
+}
+
+/*
+  i've set up a basic flexbox for each recipe container - you might want to change some of the 
+  flex properties here on the container or on the individual flex items depending on how you want to style them
+*/
+.RecipeBox{
+  display: flex;
+  flex-direction: column;
+  border: var(--border);
+  border-color: #41b45e;
+}
+
+.FilterSection{
+
+}
+
+.FilterBox{
+
+}
+
+.FilterButton{
+
+}
+/* 
+  this class will be applied to the last filter button clicked - remember because it's below .FilterButton it will overwrite
+  any duplicate properties
+*/
+.SelectedFilter{
+  background-color: red;
+  
+}
+
+.RecipeLink{
+
+}
+
+.RecipeName{
+
+}
+
+.Author{
+  margin-right: 1rem;
+ text-align: left;
+ padding-bottom: 1rem;
+}
+
+.RecipeImageContainer{
+
+}
+
+.RecipeImg{
+  float:left;
+  margin-left: 1rem;
+  margin-right: 8rem;
+  width: 500px;
+
+}
+
+.Attribution{
+  font-size: 0.5rem;
+  text-align: left;
+  margin-left: 1rem;
+
+}
+
+.Publisher{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.Cuisine{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.TimeToCook{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.SkillLevel{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.Course{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.Servings{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.Dietary{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.DatePublished{
+  margin-right: 1rem;
+  text-align: left;
+}
+
+.DateUpdated{
+  margin-right: 1rem;
+  text-align: left;
+
+}
+
+.SpecialEquipment{
+  margin-right: 1rem;
+  text-align: left;
+
+}
+
+
+
+div{
+  float: left;
+  margin-left: 1 rem;
+  text-align: left;
+  /* padding-bottom: 1rem; */
+}
+
+img {
+  float:left;
+  margin-left: 1rem;
+  width: 500px;
+}
+
+h1{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  padding-top: 1rem;
+}
+
+h2{
+  font-size: 1rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.class{
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+p{
+  font-size: 0.5rem;
+  text-align: left;
+}
+
+a{
+  font-size: 0.5rem;
+  text-align: left;
+  float: left;
+}
