@@ -1,0 +1,120 @@
+#motion-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#transition-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.transitionExample{
+  padding: 1rem;
+  height: 4rem;
+  background-color: blue;
+  flex-grow: 1;
+  transition: background-color 1s, color 500ms;
+  cursor: pointer;
+}
+
+#transition-example-1:hover{
+  background-color: rgb(118, 222, 128);
+  color: aquamarine; /* text color */
+/*   transition: 100ms;
+ */  transition: background-color 1s, color 500ms;
+}
+
+#transition-example-2:hover{
+  background-color: rgb(219, 115, 30);
+  color: rgb(255, 127, 163); /* text color */
+  transition: background-color 1s, color 500ms;
+}
+
+#transition-example-1:active{
+  background-color: rgb(220, 128, 225);
+}
+
+#transition-example-2:active{
+  background-color: rgb(128, 191, 225);
+}
+
+#animation-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.animationExample{
+  height: 8rem;
+  background-color: blue;
+/*   background: linear-gradient(red, blue);
+ */  background-size: 200% 200%;
+  flex-grow: 1; 
+  animation: cycleColour 500ms infinite;
+  
+}
+
+@keyframes cycleColour {
+  0% {
+    background-color: blue;
+    height: 1rem;
+    background-position: 100%
+  }
+  20% {
+    background-color: greenyellow;
+    height: 8rem;
+    transform: rotate(90deg);
+  }
+
+  60%{
+    background-color: black;
+  }
+
+  100% {
+  background-color: crimson;
+  height: 12rem;
+  transform: scale(2);
+  }
+}
+
+@keyframes newAnimation {
+  0% {
+    flex-grow: 2;
+  }
+  100% {
+    flex-grow: 5;
+  }
+
+
+}
+
+
+#animation-example-1{
+  animation: newAnimation 5s infinite ease-in; /* increasing in speed at the end */
+}
+
+#animation-example-2{
+  animation: cycleColour 5s infinite ease-out; /* decreasing in speed at the end */
+}
+
+#animation-example-3{
+  animation: cycleColour 5s infinite ease-in-out; /* slow at beginning and end */
+}
+
+#animation-example-4{
+  animation: cycleColour 5s infinite linear; /*  */
+}
+
+#animation-example-5{
+  animation: cycleColour 5s infinite ease-in reverse; /* reverse of colors */
+}
+
+#animation-example-6{
+  animation: cycleColour 5s infinite ease-in alternate; /* forwards than backwards (non-symetrical keyframe) */
+} 
+
+
+
