@@ -54,6 +54,8 @@
  */  background-size: 200% 200%;
   flex-grow: 1; 
   animation: cycleColour 500ms infinite;
+
+  
   
 }
 
@@ -115,6 +117,3 @@
 #animation-example-6{
   animation: cycleColour 5s infinite ease-in alternate; /* forwards than backwards (non-symetrical keyframe) */
 } 
-
-
-

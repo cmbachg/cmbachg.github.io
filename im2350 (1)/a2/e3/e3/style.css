@@ -4,6 +4,7 @@
 */
 
 /* credits, knowledge and inspiration: https://www.youtube.com/watch?v=4fZ2mulS43Q */
+/* glowy button: https://www.youtube.com/watch?v=kxf3kYbHMts&list=PLgVbRIMZ2reo75D_h8TTfMoXbNpViYVJB&index=10 */
 
 *{
   box-sizing: border-box;
@@ -12,62 +13,6 @@
   padding: 0;
   background-color: 0;
 }
-
-.leaf{
-  position: absolute;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, 50%);
-  width: 600px;
-  height: 600px;
-}
-
-.leaf > div{  /* mdn css, if there's a div inside a leaf than onlz apply to other vice versa */
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  transform-origin: 300px;
-  animation-duration: 10s;
-  animation-iteration-count: 1;
-}
-
-.color01 {
-  background-color: rgba(255,73,59,0.5);        /* a is for the transparency i think */
-  transform: translate(0px, 150px) rotate(0deg);
-}
-
-.color02 {
-  background-color: rgba(255,147,48,0.5);
-  transform: translate(0px, 150px) rotate(30deg);
-}
-
-.color03 {
-  background-color: rgba(255,194,31,0.5);
-  transform: translate(0px, 150px) rotate(60deg);
-}
-
-.color04 {
-  background-color: rgba(250,229,0,0.5);
-  transform: translate(0px, 150px) rotate(90deg);
-}
-.color05 {
-  background-color: rgba(236,230,14,0.5);
-  transform: translate(0px, 150px) rotate(0deg);
-}
-.color06 {
-  background-color: rgba(255,73,59,0.5);
-  transform: translate(0px, 150px) rotate(0deg);
-}
-.color03 {
-  background-color: rgba(255,73,59,0.5);
-  transform: translate(0px, 150px) rotate(0deg);
-}
-.color03 {
-  background-color: rgba(255,73,59,0.5);
-  transform: translate(0px, 150px) rotate(0deg);
-}
-
 
 :root{
   /* first two colours come from Kuroi's Manga Pallete Palette */
@@ -80,10 +25,6 @@
   /* scroll behaviour makes the <a> links to ids scroll to position over time rather than immediately */
   scroll-behavior: smooth;
 }
-
-
-
-
 
 body{
   padding: 1rem;
@@ -182,14 +123,139 @@ li ul{
 #load-throbber{
   /* the width, height and background-color give it a shape on the page without any content inside - 
   these value are arbitrary, please change to create your own design  */
-  width: 30%;
+  /* width: 30%;
   height: 13rem;
   border-radius: 100%;
-  background-color: var(--col-03);
+  background-color: var(--col-03); */
   /* we also initially set display to none so it only shows once the link is clicked */
-  display: none; /* don't change */
+  display: none; /* don't change */ 
+
+  .leaf{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+  }
+  
+  .leaf > div{  /* mdn css, if there's a div inside a leaf than onlz apply to other vice versa */
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transform-origin: 300px;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+  
+  .color01 {
+    background-color: rgba(255,73,59,0.5);        /* a is for the transparency i think */
+    transform: translate(0px, 150px) rotate(0deg);
+    animation-name: color;
+  }
+  
+  .color02 {
+    background-color: rgba(255,147,48,0.5);
+    transform: translate(0px, 150px) rotate(30deg);
+    animation-name: color;
+  
+  }
+  
+  .color03 {
+    background-color: rgba(255,194,31,0.5);
+    transform: translate(0px, 150px) rotate(60deg);
+    animation-name: color;
+  
+  }
+  
+  .color04 {
+    background-color: rgba(250,229,0,0.5);
+    transform: translate(0px, 150px) rotate(90deg);
+    animation-name: color;
+  
+  }
+  .color05 {
+    background-color: rgba(236,230,14,0.5);
+    transform: translate(0px, 150px) rotate(120deg);
+    animation-name: color;
+  
+  }
+  .color06 {
+    background-color: rgba(143,201,41,0.5);
+    transform: translate(0px, 150px) rotate(150deg);
+    animation-name: color;
+  }
+  .color07 {
+    background-color: rgba(0,179,85,0.5);
+    transform: translate(0px, 150px) rotate(180deg);
+    animation-name: color;
+  
+  }
+  .color08 {
+    background-color: rgba(1,168,223,0.5);
+    transform: translate(0px, 150px) rotate(210deg);
+    animation-name: color;
+  
+  }
+  .color09 {
+    background-color: rgba(29,90,170,0.5);
+    transform: translate(0px, 150px) rotate(240deg);
+    animation-name: color;
+  
+  }
+  .color10 {
+    background-color: rgba(94,71,159,0.5);
+    transform: translate(0px, 150px) rotate(270deg);
+    animation-name: color;
+  
+  }
+  .color11 {
+    background-color: rgba(198,65,156,0.5);
+    transform: translate(0px, 150px) rotate(300deg);
+    animation-name: color;
+  
+  }
+  .color12 {
+    background-color: rgba(255,135,128,0.5);
+    transform: translate(0px, 150px) rotate(330deg);
+    animation-name: color;
+  
+  }
+  
   
 }
+
+
+a {
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-family:;
+  color: #fff;
+  background: linear-gradient(90deg,#fddb6c,
+  #f5b19e,
+  #9ffcc1,
+  #abe1fc,
+  #fc98b6,
+  #f1df74);
+}
+
+#onclick:hover::before {
+  opacity: 1;
+  filter: blur(40px);
+  animation: animate 5s linear infinite;
+}
+
+#onclick:hover{
+  animation: animate 5s linear infinite;
+}
+
 
 /* Media Queries */
 
@@ -223,5 +289,20 @@ li ul{
 @media (prefers-reduced-motion) {
   :root{
     scroll-behavior: auto;
+  }
+}
+
+@keyframes color {
+  20% {
+    transform: translate(0px, 150px) rotate(-360deg);
+  }    
+}
+
+@keyframes animate {
+  from {
+    background-position: 0%;
+  }
+  to {
+    background-position: 400%;
   }
 }
