@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!-- YOU NEED TO INCLUDE THE FOLLOWING HTML SOMEWHERE IN YOUR DESIGN -->
+
+<!-- 
+<p class="attribution">
+  "<a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/track/739121">CHAABI MAROC MIX</a>" by 
+  <a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/artist/367146/CHAABI_MIX">CHAABI MIX</a> is licensed under 
+  <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/3.0/?ref=openverse">CC BY-NC-SA 3.0 
+    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+    <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+  </a>. 
+</p> 
+-->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHANGE ME</title>
+    <!-- please add a favicon -->
+    <link rel="stylesheet" href="style.css">
+    <script src="playerControls.js" defer></script>
+
+  </head>
+
+  <body>
+
+    <!-- this element holds all of the media player -->
+    <div class="audio-player-wrapper">
+      <!-- this element holds the audio element and the overlay -->
+      <div class="audio-element-wrapper">
+
+        <!-- This is just an image placeholder, feel free to replace or not -->
+        <img id="heroImage" src="./djbeats.avif" alt="">
+
+        <audio id="audioElement" controls>
+          <source src="./dj_alex_hey_dj_remix_club_edit__-_dj_axel_(2).mp3" type="audio/mp3">
+        </audio>
+
+        <img id="audioPlayOverlay" src="./icons/play.svg">
+
+      </div>
+      <!-- this element holds all of the custom controls -->
+      <div class="audio-controls-wrapper" id="controlsWrapper">
+
+        <button class="audio-control-button" id="playButton"></button>
+
+        <button class="audio-control-button" id="muteButton"></button>
+        <input id="volumesliders" type="range" min="0" max="100" value="100" class="slider" >
+      </input>
+       
+<!--         <audio id="audioElement" src="./dj_alex_hey_dj_remix_club_edit__-_dj_axel_(2).mp3S"></audio>
+ -->
+        <progress class="audio-progress-bar" id="progressBar" value="0"></progress>
+
+        
+
+      </div>
+
+      <p class="attribution">
+        "<a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/track/757123/dj-alex-hey-dj-remix-club-edit">dj alex hey dj remix club edit</a>" by 
+        <a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/album/88553/dj-alex">DJ AXEL</a> is licensed under 
+        <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/3.0/?ref=openverse">CC BY-NC-SA 3.0 
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
+        </a>. 
+      </p> 
+
+    </div>
+
+    <div class="djset">
+      <div class="set">
+        <div class="label"></div>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
+
+
+
+
+
+
+<!-- 
+i want to adjust the audio off or on
+signfier - i want to click a button
+affordance - i want to toggle between unmute and mute
+feedback - i want to update the button logo to describe the current state
+-->
