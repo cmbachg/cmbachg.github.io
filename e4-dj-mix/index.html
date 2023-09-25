@@ -4,14 +4,14 @@
 
 <!-- 
 <p class="attribution">
-  "<a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/track/739121">CHAABI MAROC MIX</a>" by 
+  "<h1 <a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/track/739121">CHAABI MAROC MIX</a>" by 
   <a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/artist/367146/CHAABI_MIX">CHAABI MIX</a> is licensed under 
   <a target="_blank" rel="noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/3.0/?ref=openverse">CC BY-NC-SA 3.0 
     <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
     <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
     <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
     <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" style="height: 1em; margin-right: 0.125em; display: inline;"></img>
-  </a>. 
+  ></a></h1>. 
 </p> 
 -->
 
@@ -20,7 +20,7 @@
   <head>
 
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHANGE ME</title>
+    <title>A2 - CMBACHG</title>
     <!-- please add a favicon -->
     <link rel="stylesheet" href="style.css">
     <script src="playerControls.js" defer></script>
@@ -29,6 +29,8 @@
 
   <body>
 
+    <h1> HEY DJ REMIX CLUB EDIT by DJ Axel </h1>
+
     <!-- this element holds all of the media player -->
     <div class="audio-player-wrapper">
       <!-- this element holds the audio element and the overlay -->
@@ -36,12 +38,14 @@
 
         <!-- This is just an image placeholder, feel free to replace or not -->
         <img id="heroImage" src="./djbeats.avif" alt="">
-
+        
+        <!-- the audio that is used in this media player -->
         <audio id="audioElement" controls>
           <source src="./dj_alex_hey_dj_remix_club_edit__-_dj_axel_(2).mp3" type="audio/mp3">
         </audio>
 
-        <img id="audioPlayOverlay" src="./icons/play.svg">
+        <!-- image of the playbutton to indicate to the user if the audio has stopped or is playing -->
+        <img id="audioPlayOverlay" id="playButton" src="./icons/play.svg">
 
       </div>
       <!-- this element holds all of the custom controls -->
@@ -50,17 +54,17 @@
         <button class="audio-control-button" id="playButton"></button>
 
         <button class="audio-control-button" id="muteButton"></button>
-        <input id="volumesliders" type="range" min="0" max="100" value="100" class="slider" >
+        <!-- give the volumeslider a range of values, 100 is chosen so when the user moves it
+            a smooth interaction is provided.
+            I found the type=range on: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range -->
+        <input id="volumesliders" id="hide" type="range" min="0" max="100" value="100" class="slider" >
       </input>
        
-<!--         <audio id="audioElement" src="./dj_alex_hey_dj_remix_club_edit__-_dj_axel_(2).mp3S"></audio>
- -->
-        <progress class="audio-progress-bar" id="progressBar" value="0"></progress>
-
-        
+        <progress class="audio-progress-bar" id="progressBar" value="0"></progress>      
 
       </div>
-
+<!-- giving credits and link to the site were the audio, picture and icons are retrieved from
+      linked to text and icons-->
       <p class="attribution">
         "<a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/track/757123/dj-alex-hey-dj-remix-club-edit">dj alex hey dj remix club edit</a>" by 
         <a target="_blank" rel="noopener noreferrer" href="https://www.jamendo.com/album/88553/dj-alex">DJ AXEL</a> is licensed under 
@@ -72,11 +76,17 @@
         </a>. 
       </p> 
 
+
     </div>
 
-    <div class="djset">
-      <div class="set">
-        <div class="label"></div>
+    <!-- show the djset and cirle to give a dj vibe. created in css -->
+    <div class="djset"></div>
+    <div id="c1"></div>
+    <div id="c2"></div>
+    
+
+    
+    </script>
 
       </div>
 

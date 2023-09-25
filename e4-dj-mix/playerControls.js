@@ -1,7 +1,5 @@
 /* DEFINITIONS & SETUP */
 
-/* https://www.youtube.com/watch?v=vvdRu7ljg54&t=1641s */
-
 // first let's retrieve references to all the elements we'll need to use
 // this is the audio itself
 let audioElement = document.getElementById("audioElement");
@@ -9,18 +7,20 @@ let audioElement = document.getElementById("audioElement");
 let playButton = document.getElementById("playButton");
 let muteButton = document.getElementById("muteButton");
 let stopButton = document.getElementById("stopButton");
+
+// references used for this part:
+// https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/input_event
+// https://www.geeksforgeeks.org/javascript-this-keyword/
+
 let volumeSliders = document.getElementById("volumesliders");  /* volume sliders to change the volume of the music playing */
 
-
-audioElement.volume = volumeSliders.value / 100;
-
-volumeSliders.addEventListener("input", function (){
-  audioElement.volume = this.value / 100;
-
+// add 'input' so the user can interact with the volumeslider and change the volume to their preferences
+volumeSliders.addEventListener('input', () => {
+  // the max and min values are defined in html, here we extract the current value.
+  let volume = volumeSliders.value / 100;  
+  // get the volume and update it
   audioElement.volume = volume;
-
 });
-
 
 // the progress element
 let progressBar = document.getElementById("progressBar");
@@ -51,6 +51,29 @@ audioElement.addEventListener("playing", () => {
     progressBar.setAttribute('max', audioElement.duration);
   }
 });
+
+/* APPEAR VOLUMEBAR */
+// references used for this part:
+// https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+
+// by adding the event mouseenter it shows the volumeslider if the mouse is hovered over the volume icon
+// block makes sure that the volumeslider is not visible unless the mouse enters the volume icon
+// when the volumeslider is visible, it is also possible to adjust the volume
+muteButton.addEventListener('mouseenter', () =>{
+  volumeSliders.style.display = 'block';
+
+});
+//by adding the event mouseleave, the volumeslider disappears after 3 seconds when the mouse was hovered over the volume icon
+// by setting the display to none, the volumeslider is not displayed if the mouse leaves the volume icon
+// the delay of 3 seconds gives the user the time to still adjust the volume for 3 seconds, after leaving the volumeicon
+muteButton.addEventListener('mouseleave', () =>{
+  setTimeout(() => {
+    volumeSliders.style.display ='none';
+  }, 3000);
+
+});
+
+
 
 /* LOADING */
 
@@ -175,7 +198,7 @@ signfier - i want to click a button
 affordance - i want to toggle between unmute and mute
 feedback - i want to update the button logo to describe the current state */
 
-/* this is mz function to toggle between mute and unmute*/
+/* this is my function to toggle between mute and unmute*/
 function muteUnmute(){
   /* check if working */
    /* console.log("mute/unmute is working"); */

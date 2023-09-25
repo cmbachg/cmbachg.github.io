@@ -14,7 +14,7 @@
 :root{
   --col-01:#222323;
   --col-02:#f0f6f0;
-  --col-03:#5252ff;
+  --col-03:#3081d8;
   --col-04:#b6e878;
   --col-05:#bcbdbc;
   --col-06:#6f6f6f;
@@ -28,7 +28,7 @@
   margin: 0 auto;
 }
 
-/* becuase I want to overlay the play icon on the audio they need to be in their own wrapper */
+/* because I want to overlay the play icon on the audio they need to be in their own wrapper */
 .audio-element-wrapper{
   display: grid;
   grid-template-columns: 1fr;
@@ -75,8 +75,10 @@
   border: none;
   cursor: pointer;
 }
+
+
 .audio-control-button:hover{
-  background-color: var(--col-05);
+  background-color: var(--col-03);
 }
 .audio-control-button:active{
   background-color: var(--col-06);
@@ -102,15 +104,15 @@
   height: 2rem;
   flex-grow: 1;
   cursor: pointer;
-  background-color: var(--col-01);
+  background-color: var(--col-03);
   box-shadow: 0 1px 2px var(--col-02) inset;
 }
 ::-moz-progress-bar {
-  background-color: var(--col-02);
+  background-color: var(--col-03);
 }
 
 ::-webkit-progress-bar {
-  background-color: var(--col-01);
+  background-color: var(--col-03);
   box-shadow: 0 1px 2px var(--col-02) inset;
 }
 ::-webkit-progress-value {
@@ -129,57 +131,68 @@
   }
 }
 
+/* the purpose of djset and c1 was to create a djset. However I could not figure, in time, how the circle (c1/2) could stay, relatively, on the same spot. I tried with relative and absolute position but it didnt work for me. So, the idea is there and on a certain width of the screen it looks like a djset. */
 .djset{
-  background-color: #222323;
+  background-color: var(--col-01);
   width: 200%;
   height: 11rem;
-  position: center;    
+  position: relative;    
   transform: translate(-50%, -132%);
 }
 
-.knobs{
-
+#c1{
+  position: relative;
+  top: 5rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 100%;
+  background: var(--col-03);
+  transform: translate(750%, -325%) ;
 }
+#c2{
+  position: relative;
+  top: 5rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 100%;
+  background:var(--col-03);
+  transform: translate(350%, -425%) ;
+}
+
 
 .volumeSliders{
-
+  display: none;
+  background: var(--col-03);
 }
 
+/* creating a non-default slider which ranges from 0 - 100
+the slider has been made black to fit the rest of the icons*/
 .slider {
   -webkit-appearance: none;
+  appearance: none;
   width: 20%;
   height: 5px;
   border-radius: 5px;  
   transform: translate(0%, 250%) ;
   background: #000000;
   outline: none;
-
+  background-color: var(--col-03);
 }
+
+/* reference on how to customize the slider thumb:
+https://blog.logrocket.com/creating-custom-css-range-slider-javascript-upgrades/
+and from the code of audio progress bar, above 
+the thumb indicates to the user how loud the volume is and how much louder it can be*/
 
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%; 
-  background: #000000;
+  border: none;
+  width: 0.9rem;
+  height: 0.9rem;
+  flex-grow: 1;
   cursor: pointer;
-}
-
-.djset-element-wrapper{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-}
-
-#setOverlay{
-  width: 8rem;
-  height: 10rem;
-  grid-column: 1/2;
-  grid-row: 1/2;
-  justify-self: center;
-  align-self: center;
-  opacity: 0.6;
-  pointer-events: none;
-  /* display: none; */
+  background-color: #000000;
+  border-radius: 100%; 
 }
