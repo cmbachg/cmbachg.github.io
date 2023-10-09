@@ -1,0 +1,52 @@
+body{
+    background-color: #060318 ;
+}
+
+h1{
+    position: relative;
+    text-align: center;
+    color: orange;
+}
+
+
+.body{
+   background: #07012d; 
+}
+
+#title{
+    width:100%;
+    height: 4rem;
+    background-color: #051b0d;
+    border: 1rem #051b0d;
+    text-align: center;
+    top: 1rem;
+    
+
+}
+
+#load-link{
+    line-height: 1rem;
+    background-color: #051b0d;
+    width: 200%;
+    border: 0;
+}
+
+#load-throbber{
+    display: none;
+}
+
+/* source: https://www.w3schools.com/tags/tag_fieldset.asp#:~:text=Definition%20and%20Usage,box%20around%20the%20related%20elements. */
+#fieldset{
+    padding: 3rem;
+    background-color: rgb(22, 92, 153);
+    top: 3rem;
+    text-align: center;
+}
+
+fieldset{
+    font-size: 1rem;
+}
+
+legend{
+    font-size: 2rem;;
+}
