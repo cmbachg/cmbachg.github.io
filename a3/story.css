@@ -24,6 +24,10 @@ h1{
 
 }
 
+input{
+    float: left;
+}
+
 #load-link{
     line-height: 1rem;
     background-color: #051b0d;
@@ -33,6 +37,9 @@ h1{
 
 #load-throbber{
     display: none;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 /* source: https://www.w3schools.com/tags/tag_fieldset.asp#:~:text=Definition%20and%20Usage,box%20around%20the%20related%20elements. */
@@ -41,11 +48,24 @@ h1{
     background-color: rgb(22, 92, 153);
     top: 3rem;
     text-align: center;
+    margin: 0;
 }
 
 fieldset{
     font-size: 1rem;
 }
+
+.flextable{
+    display: flex;
+}
+
+#field1{
+    width:60%;
+}
+#field2{
+    width:30%;
+}
+
 
 legend{
     font-size: 2rem;;

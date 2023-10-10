@@ -1,48 +1,44 @@
 /* source of image: https://gencraft.com/generate
     created by AI */
 
-h1{
-    position: relative;
-    text-align: center;
-    color: orange;
-}
-
-
-#mode-button{
-    float: center;
-    position: sticky;
-    top: 1rem;
-}
-
-.img{
-    background-image: url("hauntedmanor.png");
-    background-size: cover ;
-    background-repeat: no-repeat;
-    height:100vh;
-}
-
-#load-body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- 
-}
-
-#load-link{
-    line-height: 3rem;
-    background-color: #ddae4f;
-    width: 20%;
-    border: 5;
-/*     text-align: center;
- */    
-}
-
-#load-throbber{
-    display: none;
-}
-
-
-
-
-
+    h1{
+        position: relative;
+        text-align: center;
+        color: orange;
+    }
+    
+    
+    #mode-button{
+        float: center;
+        position: sticky;
+        top: 1rem;
+    }
+    
+    .img{
+        background-image: url("hauntedmanor.png");
+        background-size: cover ;
+        background-repeat: no-repeat;
+        background-position: center;
+        height:100vh;
+    }
+    
+    #load-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+     
+    }
+    
+    #load-link{
+        line-height: 3rem;
+        background-color: #ddae4f;
+        width: 20%;
+        border: 5;
+    /*     text-align: center;
+     */    
+    }
+    
+    #load-throbber{
+        display: none;
+    }
