@@ -1,3 +1,5 @@
+/*  rgb(22, 92, 153) */
+
 body{
     background-color: #060318 ;
 }
@@ -6,6 +8,12 @@ h1{
     position: relative;
     text-align: center;
     color: orange;
+    font-size: 5rem;
+    
+}
+
+a{
+    color: white;
 }
 
 
@@ -45,14 +53,29 @@ input{
 /* source: https://www.w3schools.com/tags/tag_fieldset.asp#:~:text=Definition%20and%20Usage,box%20around%20the%20related%20elements. */
 #fieldset{
     padding: 3rem;
-    background-color: rgb(22, 92, 153);
+    background-color:#060318;
     top: 3rem;
-    text-align: center;
+    text-align: justify;
     margin: 0;
+}
+
+legend{
+    color: white;
 }
 
 fieldset{
     font-size: 1rem;
+    background-color: #051b0d;
+}
+
+#fieldset1{
+    font-size: 1rem;
+    background-color: #051b0d;
+}
+
+#fieldset2{
+    font-size: 1rem;
+    background-color: #060318;
 }
 
 .flextable{
@@ -60,13 +83,93 @@ fieldset{
 }
 
 #field1{
-    width:60%;
+    width:40%;
+    text-align:justify;   
+    padding: 3rem; 
+    top: 3rem;
 }
 #field2{
-    width:30%;
+    width:50%;
+    text-align:justify;
+    padding: 3rem; 
+    top: 3rem;
 }
 
+#fieldA{
+    width:40%;
+    text-align:justify;
+    padding: 3rem; 
+    top: 3rem;
+}
+#fieldB{
+    width:50%;
+    padding: 3rem; 
+    top: 3rem;
+}
+
+button{
+    background-color: #ddae4f ;
+}
 
 legend{
     font-size: 2rem;;
+}
+
+#imgOption1{
+    height: 15rem;
+    width: 15rem;
+}
+#imgOption2{
+    height: 15rem;
+    width: 15rem;
+}
+#imgOptionB1{
+    height: 15rem;
+    width: 15rem;
+}
+#imgOptionB2{
+    height: 15rem;
+    width: 15rem;
+}
+#imgOptionC1{
+    height: 15rem;
+    width: 15rem;
+}
+#imgOptionC2{
+    height: 15rem;
+    width: 15rem;
+}
+#imgOptionC3{
+    height: 15rem;
+    width: 15rem;
+}
+#imgOptionC4{
+    height: 15rem;
+    width: 15rem;
+}
+
+#fieldset6{
+    width: 90%;
+}
+
+
+.part{
+    width:50%;
+    text-align:justify;
+    padding: 3rem; 
+    top: 3rem;
+}
+
+.choose{
+    width:40%;
+    text-align:justify;
+    padding: 3rem; 
+    top: 3rem;
+}
+
+.extra{
+    width:100%;
+    text-align:justify;
+    padding: 3rem; 
+    top: 3rem;
 }
